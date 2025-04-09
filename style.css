@@ -19,7 +19,7 @@ body{
   }
 
 .header nav .logo{
-    font-size: 20px;
+    font-size: 30px;
     color: white;
 }
 
@@ -34,7 +34,7 @@ body{
  }
 
  .header nav .nav-menu ul li{
-   font-size: 20px;
+   font-size: 25px;
  }
 
  .header nav .nav-menu ul li a{
@@ -107,17 +107,20 @@ body{
  }
 
  .nav-btn button{
-   padding: 10px 10px;
+   padding: 15px 15px;
    background-color: #DF6951;
    cursor: pointer;
    border: none;
    border-radius: 5px;
    color: #fff;
    transition: all 0.6s ease-in;
+   font-size: 20px;
  }
 
  .nav-btn button:hover{
    transform: scale(1.1);
+   background: #111;
+   border: 1px solid gray ;
  }
 
  .hero-section{
@@ -133,7 +136,7 @@ body{
 
 .hero-content{
  
-   margin-top: 300px;
+   margin-top: 200px;
    margin-left: 120px;
    position: relative;
  
@@ -141,7 +144,7 @@ body{
 
 .hero-content h1{
    color: #fff;
-   font-size: 3rem;
+   font-size: 4rem;
    font-weight: bold;
 }
 
@@ -156,7 +159,8 @@ body{
    display: flex;
    gap: 30px;
   
-  padding: 10px 40px 10px 10px;
+  padding: 20px 60px ;
+ 
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(255,255,255,0.7);
   position: relative;
@@ -183,12 +187,13 @@ body{
    
   .search-btn button{
    background: #DF6951;
-   padding: 10px 20px;
+   padding: 10px 30px;
    border: none;
    border-radius: 5px;
    cursor: pointer;
    color: #fff;
-   transition: all 0.5s ease-out;
+   font-size: 20px;
+   transition: all 0.5s ease;
   }
 
   .search-btn button:hover{
@@ -279,12 +284,12 @@ body{
 
  .ser-text span{
   color: #DF6951;
-  font-size: 20px;
+  font-size: 25px;
  }
 
  .ser-text h2{
   color: #111;
-  font-size: 25px;
+  font-size:3rem;
   font-weight: bold
  }
 
@@ -309,14 +314,14 @@ body{
  }
 
  .service-text span{
-   font-size: 20px;
+   font-size: 25px;
      font-weight: 600;
      color: #111;
  }
 
  .service-text p{
   color: #999;
-  font-size: 1rem;
+  font-size: 1.3rem;
  }
  .service{
   position: relative;
@@ -330,7 +335,7 @@ body{
   background: #DF6951;
   border-radius:10px;
   position: absolute;
-  bottom: -35px;
+  bottom: -70px;
   left:- 12px;
   z-index: -1;
  
@@ -338,17 +343,22 @@ body{
 
 .lfe{
   position: relative;
-  left: -30px;
+  left: -40px;
+  top: 10px;
+  z-index: -1;
+  
 }
 
 .child-two{
- 
-  box-shadow: 0 0 10px gray;
-  padding: 15px 10px;
-  z-index: 1000;
-  border-radius: 10px;
-  background: #fff;
+ z-index: 1111;
+ background: white;
+}
 
+.service{
+  box-shadow: 0 0 10px gray;
+  padding: 40px 20px;
+    border-radius: 10px;
+  background: #fff;
 }
 
 .romantice-section{
@@ -360,7 +370,7 @@ body{
 }
 
 .romantice-img img{
-  width:400px;
+  width:600px;
   transition: 0.6s ease-in;
   object-fit: cover;
 }
@@ -378,16 +388,17 @@ body{
   color: #DF6951;
   font-size: 20px;
   font-weight:500;
+  font-size: 20px
 }
 
 .romantice-story h2{
   color: #111;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .romantice-story p{
   color: #555;
-  font-size: 1rem;
+  font-size: 20px;
   margin-top: 10px;
   font-weight: 500;
 }
@@ -483,7 +494,7 @@ body{
 }
 
 .cart-img img{
-  width: 200px;
+  width: 259px;
   object-fit: cover;
 }
 
@@ -590,7 +601,7 @@ body{
 
  .plan-image img{
   z-index: -1;
-  width: 550px;
+  width: 600px;
  }
 .section-img{
   position: relative;
@@ -670,7 +681,7 @@ body{
  }
 
  .galeary-section img{
-  width: 150px;
+  width: 200px;
  
  }
 
@@ -678,13 +689,14 @@ body{
   position: relative;
   left: -120px;
   z-index: -1;
-  top: -300px;
+  top: -250px;
   
  }
 
  .vajail-img img{
-  width: 350px;
+  width: 400px;
   height: 500px;
+  object-fit: cover
  
   
   }
@@ -729,7 +741,7 @@ body{
 
 
 .place-img img{
-  width: 250px;
+  width: 300px;
 }
 
 .grid-content{
@@ -802,7 +814,15 @@ body{
 
 .grid-card{
   padding-left: 20px;
+  transition: all .7s ease-in;
 }
+
+.grid-card:hover{
+    cursor: pointer;
+   box-shadow: 0 12px 20px gray;
+   border-radius: 10px;
+}
+   
 
 .grid-text{
   margin-top: 10px;
@@ -1033,39 +1053,18 @@ bottom: 50px;
 /*responsive*/
 
 @media (max-width: 768px){
-   .nav-menu{
-    
-    flex-direction: column;
-    position: absolute;
-    top: 0 ;
-    background: #111;
-    left: 0;
-    width: 200px;
-    display: none;
-    padding: 50px;
-    border-radius: 10px;
-   }
-
-   .nav-menu ul li a{
-    display: block;
-   }
-
-   .menu-icon{
-    display: block;
-   }
-
-   #menu-toggle:checked + .menu-icon + .nav-menu{
-      display: flex;
-   }
-
-
+   
+ .nav-menu{
+  display: none;
+ }
+   
    .service-border {
    display: none;
        
   }
 
   .nav-btn button{
-  display: none;
+   margin-left: 20px;
   }
 
   .hero-content{
@@ -1125,10 +1124,13 @@ bottom: 50px;
    .service-content{
     flex-direction: column;
    }
-
+  
+   .romantice-img img{
+    width: 450px;
+    margin-left: -60px;
+   }
    .romantice-section{
    flex-direction: column;
-   margin-right: 50px;
   }
    .romantice-story span{
     margin-left: 50px;
@@ -1153,7 +1155,7 @@ bottom: 50px;
 }
 
 .booking-right{
-  margin-left: 150px;
+  margin-left:150px;
 }
 
 .section-img img{
@@ -1243,9 +1245,21 @@ bottom: 50px;
  grid-template-columns: auto;
 }
 
+.resort-cart{
+  box-shadow: 0 0 10px #999;
+  padding:10px 10px;
+  
+}
+
+.cart-img img{
+  width: 200px;
+  object-fit: cover;
+}
+
+
 }
 /*tablet responsive*/
 @media  (max-width: 1024px){
-  
+
 }
 
